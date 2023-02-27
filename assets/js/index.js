@@ -40,7 +40,7 @@ function meuEscopo() {
 
     async function pegarHora() {
         try {
-            const response = await fetch('http://worldtimeapi.org/api/timezone/America/Sao_Paulo');
+            const response = await fetch('https://worldtimeapi.org/api/timezone/America/Sao_Paulo');
             const data = await response.json();
             const hora = data.datetime.slice(11, 19);
             return hora;
